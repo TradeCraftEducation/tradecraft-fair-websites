@@ -281,6 +281,29 @@
     color: var(--ink-faint);
     max-width: 66ch;
   }
+  .tier-picker {
+    margin: 22px 0 0;
+    padding: 14px 18px;
+    background: var(--accent-tint);
+    border-radius: 8px;
+    font-size: 0.92rem;
+    color: var(--ink-body);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 22px;
+  }
+  .tier-picker strong { color: var(--accent-strong); font-weight: 700; }
+  .tier .see-live {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--accent-strong);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .tier .see-live::after { content: "→"; transition: transform 0.15s ease; }
+  .tier .see-live:hover::after { transform: translateX(3px); }
 
   /* How it works */
   .steps {
@@ -408,28 +431,31 @@
       <h2>Two starting points, one annual plan</h2>
       <p>Final pricing depends on your show's specific needs — these are the starting points most organizations land on.</p>
     </div>
+    <p class="tier-picker"><span><strong>Just the livestock show?</strong> Livestock Show Website.</span><span><strong>Also carnival, entertainment, vendors, or tickets?</strong> Full Fair + Livestock Website.</span></p>
     <div class="tiers">
       <div class="tier featured">
         <h3>Livestock Show Website</h3>
         <div class="price"><span class="starting">Starting at</span>$1,795<small>first year</small></div>
-        <p class="desc">For a livestock show or youth expo — the show, rules, species, schedule, and auction, done right.</p>
+        <p class="desc">For a livestock show or youth expo with no fair midway — just the show, rules, species, schedule, and auction, done right.</p>
         <ul>
           <li>Show info, rules &amp; rulebook</li>
           <li>Species &amp; divisions</li>
           <li>Auction &amp; buyers</li>
           <li>Scholarships &amp; results</li>
         </ul>
+        <a class="see-live" href="https://crosstimbers-county-fair-demo.joseph-molina.workers.dev/" target="_blank" rel="noopener">See it live: Cross Timbers</a>
       </div>
       <div class="tier">
         <h3>Full Fair + Livestock Website</h3>
         <div class="price"><span class="starting">Starting at</span>$2,995–$3,495<small>first year</small></div>
-        <p class="desc">For fairs adding entertainment, carnival, tickets, vendors, creative arts, rodeo, parking, and a larger calendar.</p>
+        <p class="desc">For a multi-day fair — everything in Livestock Show, plus entertainment, carnival, tickets, vendors, creative arts, rodeo, parking, and a larger calendar.</p>
         <ul>
           <li>Everything in Livestock Show</li>
           <li>Carnival, entertainment &amp; tickets</li>
           <li>Vendors &amp; creative arts</li>
           <li>Larger, multi-category calendar</li>
         </ul>
+        <a class="see-live" href="https://westjack-county-fair-demo.joseph-molina.workers.dev/" target="_blank" rel="noopener">See it live: Westjack</a>
       </div>
       <div class="tier">
         <h3>Annual Website Care</h3>
