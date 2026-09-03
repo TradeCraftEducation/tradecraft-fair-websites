@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fairs.tradecrafteducation.com/sitemap.xml
