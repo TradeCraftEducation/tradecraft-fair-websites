@@ -7,7 +7,7 @@
 <meta name="description" content="TradeCraft designs, builds, and manages fast, mobile-first websites for county fairs, livestock shows, and youth expos — see live examples and starting pricing.">
 <link rel="canonical" href="https://fairs.tradecrafteducation.com/">
 <meta name="theme-color" content="#F58220">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.png" type="image/png">
 
 <!-- Open Graph (Facebook, LinkedIn, Slack, iMessage, most link previews) -->
 <meta property="og:type" content="website">
@@ -371,6 +371,49 @@
   .step h3 { font-size: 1.0rem; font-weight: 600; }
   .step p { color: var(--ink-muted); font-size: 0.92rem; font-family: 'Work Sans', sans-serif; }
 
+  /* FAQ */
+  .faq-list { margin-top: 24px; display: flex; flex-direction: column; gap: 10px; }
+  .faq-item {
+    background: var(--surface);
+    border: 1px solid var(--surface-line);
+    border-radius: 8px;
+    padding: 4px 20px;
+  }
+  .faq-item summary {
+    padding: 16px 0;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: none;
+    letter-spacing: normal;
+    color: var(--ink);
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: "+";
+    flex: none;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--accent-strong);
+    transition: transform 0.15s ease;
+  }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
+  .faq-item p {
+    margin: 0 0 18px;
+    color: var(--ink-muted);
+    font-size: 0.94rem;
+    font-family: 'Work Sans', sans-serif;
+    text-transform: none;
+    max-width: 68ch;
+  }
+
   /* CTA footer */
   .cta {
     background: var(--cta-bg);
@@ -543,6 +586,37 @@
         <h3>Review, launch, and we manage it</h3>
         <p>You review it live before it goes public. After launch, TradeCraft handles hosting and routine updates all year.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common questions</span>
+      <h2>Before you ask</h2>
+    </div>
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>We already use ShoWorks, FairEntry, a ticket provider, or an auction platform — do we still need this?</summary>
+        <p>Yes, and it's not a replacement for any of those. TradeCraft builds the public-facing website — the fast, mobile-friendly front door where exhibitors, buyers, and parents find your schedule, rules, and dates. When someone's ready to actually enter, buy a ticket, or register as a buyer, the site sends them straight to whatever system you already use for that. You keep the specialized tools you rely on; the website is what makes them easy to find.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How long does it take to get our site live?</summary>
+        <p>It depends mainly on how quickly we get your content — dates, rules, sponsor logos, photos, and so on — and how many rounds of review you want before launch. The intake form is the real starting point; once we have what we need, we'll give you a specific timeline for your show.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Can we make our own updates, or do we have to go through you every time?</summary>
+        <p>Routine changes go through us, and that's by design, not a limitation — no software to learn, no risk of accidentally breaking something the week before your show. Annual Website Care includes a full show-year rollover plus four additional update requests, with a normal 3–5 business day turnaround (faster during show week). Typical requests: new dates, a replaced rulebook, sponsor changes, results, and similar routine updates.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do we own our website and domain?</summary>
+        <p>Yes. You own your domain — TradeCraft doesn't hold it hostage. We build, host, and manage the site itself as part of your plan, but the domain stays yours the same way it always has.</p>
+      </details>
+      <details class="faq-item">
+        <summary>We're just a livestock show now, but might add more later — is that a problem?</summary>
+        <p>Not at all. Every TradeCraft site is built on the same underlying system, just with different modules turned on. Starting with the Livestock Show package and later adding carnival, entertainment, tickets, or vendors as your show grows is a straightforward upgrade, not a rebuild.</p>
+      </details>
     </div>
   </div>
 </section>
