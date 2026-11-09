@@ -358,6 +358,39 @@
   .tier .see-live::after { content: "→"; transition: transform 0.15s ease; }
   .tier .see-live:hover::after { transform: translateX(3px); }
 
+  /* Optional add-ons band (secondary offer, kept low-key) */
+  .addon-band {
+    margin-top: 0;
+    padding: 22px 24px;
+    background: var(--surface);
+    border: 1px solid var(--surface-line);
+    border-left: 4px solid var(--accent);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px 28px;
+  }
+  .addon-band > div { flex: 1 1 380px; }
+  .addon-band .eyebrow { margin-bottom: 6px; }
+  .addon-band h2 { font-size: 1.15rem; font-weight: 600; }
+  .addon-band p { margin-top: 8px; color: var(--ink-muted); font-size: 0.94rem; max-width: 60ch; }
+  .addon-band .addon-link {
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: var(--accent-strong);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 0;
+    white-space: nowrap;
+  }
+  .addon-band .addon-link::after { content: "→"; transition: transform 0.15s ease; }
+  .addon-band .addon-link:hover::after { transform: translateX(3px); }
+  .addon-band .addon-link:hover { text-decoration: underline; }
+
   /* How it works */
   .steps {
     margin-top: 26px;
@@ -588,6 +621,19 @@
       </div>
     </div>
     <p class="care-note">Routine updates cover the things that change every year: dates, deadlines, schedules, rulebooks and PDFs, contact and board changes, registration and auction links, results, and basic sponsor updates.</p>
+  </div>
+</section>
+
+<section id="add-ons">
+  <div class="wrap">
+    <div class="addon-band">
+      <div>
+        <span class="eyebrow">Optional for sale day</span>
+        <h2>Need help with buyer add-ons too?</h2>
+        <p>TradeCraft Show Solutions replaces paper add-on sheets and spreadsheets on auction day. Buyers check in and add on from their phones, and your show gets clean reports afterward. It&rsquo;s separate from your website &mdash; add it any time, or skip it completely.</p>
+      </div>
+      <a class="addon-link" href="https://www.tradecrafteducation.com/pages/tradecraft-show-solutions" target="_blank" rel="noopener">Learn about Show Solutions</a>
+    </div>
   </div>
 </section>
 
